@@ -1,8 +1,8 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
-const { Pool, Client } = require('pg')
-
+//const { Pool, Client } = require('pg')
+/*
 const pool = new Pool({
   user: 'jainil27',
   host: 'db.imad.hasura.io',
@@ -10,7 +10,7 @@ const pool = new Pool({
   password: process.env.DB_PASSWORD,
   port: 5432,
 })
-
+*/
 var app = express();
 app.use(morgan('combined'));
 
