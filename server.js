@@ -35,7 +35,7 @@ app.get('/third', function(req,res){
     res.send("Kavita Desai");
 });
 
-var pool = new Pool(conifg);
+var pool = new Pool(config);
 app.get('/test-db',function(req,res){
     pool.query('SELECT * FROM test;',function(err,result){
         if(err){
