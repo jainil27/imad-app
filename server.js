@@ -4,13 +4,15 @@ var path = require('path');
 //const { Pool, Client } = require('pg')
 var Pool= require('pg').Pool;
 
-var config ={
+var config={
   user: 'jainil27',
   database: 'jainil27',
   host: 'db.imad.hasura.io',
   port: '5432',
   password: process.env.DB_PASSWORD
 };
+
+var pool = new Pool(config);
 
 var app = express();
 app.use(morgan('combined'));
@@ -35,7 +37,6 @@ app.get('/third', function(req,res){
     res.send("Kavita Desai");
 });
 
-var pool = new Pool(config);
 app.get('/test-db',function(req,res)
 {
   //make a query
