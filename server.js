@@ -6,10 +6,10 @@ var Pool= require('pg').Pool;
 
 var config ={
   user: 'jainil27',
-  host: 'db.imad.hasura.io',
   database: 'jainil27',
-  password: process.env.DB_PASSWORD,
+  host: 'db.imad.hasura.io',
   port: 5432,
+  password: process.env.DB_PASSWORD,
 };
 
 var app = express();
