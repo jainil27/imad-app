@@ -11,11 +11,11 @@ submit.onClick = function() {
                 console.log("user logged in");
                 alert("Log in success!!");
             }
-            else if(requeststatus === 403)
+            else if(request.status === 403)
             {
                 alert("Incorrect password");
             }
-            else if(requeststatus === 500)
+            else if(request.status === 500)
             {
                 alert("server Error");
             }
