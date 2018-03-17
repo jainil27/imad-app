@@ -1,6 +1,6 @@
 console.log('Loaded!');
 var submit= document.getElementById('submit_btn');
-submit.onClick = function() {
+submit.onclick = function() {
     
     var request = new XMLHttpRequest();
     
