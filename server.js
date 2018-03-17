@@ -177,6 +177,9 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+app.get('/:email/:name',function(req,res){
+    res.send("DONE");
+});
 
 app.get('/test-db',function(req,res)
 {
